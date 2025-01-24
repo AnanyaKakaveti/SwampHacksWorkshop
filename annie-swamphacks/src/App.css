@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  max-height: 10vh;
+  .mylogo {
+    max-height: 10vh;
+  }
+
+  .mylogo:hover {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh; /* makes sure the page is at least as tall as our screen length */
@@ -30,4 +42,13 @@ h1 {
 .pfp-img { /* styles our profile picture */
   border-radius: 50%;
   max-width: 40vw;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
